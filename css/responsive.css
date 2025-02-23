@@ -1,0 +1,342 @@
+/* ------ Desktop | Laptop ( 1200px and up) -----*/
+
+@media (min-width: 992px) {
+
+	.container{
+		max-width: 118rem;
+	}
+
+}
+
+
+/* ------ Medium devices (tablets, 991px and down) -----*/
+
+@media (max-width: 991px) {
+
+	html {
+		font-size: 52%;
+	}
+
+	.menu {
+		position: absolute;
+		left: 0;
+		top: -400%;
+		width: 100%;
+		flex-direction: column;
+		border-top: 0.2rem solid #7B7BA7;
+		border-bottom: 0.2rem solid #7B7BA7;
+		background: var(--Nav, linear-gradient(88deg, #0D0A1B 41.8%, #35325B 98.52%));
+		padding: 3.5rem 0;
+		z-index: -1;
+		transition: 400ms;
+		opacity: 0;
+		pointer-events: none;
+	}
+
+	.menu.show {
+		top: 100%;
+		opacity: 1;
+		pointer-events: auto;
+	}
+
+	.menu li a {
+		font-size: 2.4rem;
+	}
+
+	.hamburger-menu{
+		display: inline-block;
+	}
+	
+	.title_md{
+		font-size: 3.2rem;
+	}
+	
+	.title_xs{
+		font-size: 2rem;
+	}
+
+	.site_logo img {
+		width: 5rem;
+	}
+
+	.hero_content {
+		background-position: center 189%;
+		background-size: contain;
+	}
+
+	.services_wrapper .row {
+		--bs-gutter-x: 3rem;
+		--bs-gutter-y: 7rem;
+	}
+
+	.about_wrapper {
+		padding: 3.5rem 3rem 5rem;
+	}
+
+	.project_logo {
+		min-height: 22rem;
+	}
+
+	.project_cards .league_logo {
+		width: 35rem;
+	}
+	
+	.project_cards .rival_logo {
+		width: 33rem;
+	}
+
+	.profile_box {
+		gap: 4.5rem;
+	}
+
+    .profile_image img {
+        width: 21.7rem;
+        min-height: 28.7rem;
+        object-fit: cover;
+    }
+
+	.skills_box .row {
+		--bs-gutter-x: 5rem;
+		--bs-gutter-y: 6.6rem;
+	}
+
+	.services_cards h4 {
+		padding: 2.6rem 0;
+	}
+ 
+	.services_cards .pt_25 {
+		padding-top: 0rem;
+	}
+
+	.services_cards p br {
+		display: none;
+	}
+
+	.option {
+		display: flex;
+		flex-direction: column;
+		gap: 1.8rem;
+	}
+
+	.skills_option p {
+		font-size: 1.2rem;
+	}
+
+	.ready_content_box h2 {
+		font-size: 4.5rem;
+	}
+
+	.project_cards p br {
+		display: none;
+	}
+
+}
+
+
+
+
+/*----- sm devices (tablets, 767px and down) -----*/
+
+@media (max-width: 767px) {
+
+	html {
+		font-size: 62.5%;
+	}
+
+	.container {
+		padding-left: 2.8rem;
+		padding-right: 2.8rem;
+	}
+
+    .title_xl {
+		font-size: 3.5rem;
+	}
+
+	.title_lg {
+		font-size: 4rem;
+	}
+
+	.title_xs{
+		font-size: 2.4rem;
+	}
+
+	.site_header {
+		padding: 2rem 0rem;
+	}
+
+	.site_logo img {
+        width: 4rem;
+    }
+
+	.hero_content {
+		background-image: url(../img/hero-mobile-banner.png);
+		background-position: center;
+		background-size: cover;
+		padding: 9rem 0 13rem;
+	}
+
+	.get_button .mt_50 {
+		margin-top: 0;
+	}
+
+	.hero_section  {
+		padding-bottom: 0.3rem;
+	}
+
+	.hero_section .container {
+		padding-left: 0;
+		padding-right: 0;
+	}
+
+	.button_text .arrow {
+		width: 1.2rem;
+	}
+
+	.get_button.text-center {
+		margin-top: -9rem;
+	}
+
+	.hero_content p {
+		font-size: 1.6rem;
+        max-width: 25rem;
+        margin: 1rem auto;
+	}
+
+	.button {
+		font-size: 1.4rem;
+		border-width: 1px;
+		border-radius: 0.2rem;
+		background: linear-gradient(266deg, #FFD369 0%, #99713F 100.41%);
+		box-shadow: 0px 0px 4.376px 0px #F7D9A6, 0px 0px 2.501px 0px #F7D9A6, 0px 0px 1.459px 0px #F7D9A6, 0px 0px 0.729px 0px #F7D9A6, 0px 0px 0.208px 0px #F7D9A6, 0px 0px 0.104px 0px #F7D9A6;
+	}
+
+	.piece_border {
+		width: 14.4rem;
+	}
+
+	.spacer {
+		min-height: 11.9rem;
+	}
+
+	.title_box .pb_30 {
+		padding-bottom: 1.5rem;
+	}
+
+	.services_wrapper {
+		padding: 3.2rem 0 1rem;
+	}
+
+	.services_wrapper .row {
+        --bs-gutter-x: 3rem;
+        --bs-gutter-y: 1.6rem;
+    }
+
+	.services_cards {
+		padding: 1.5rem 1.2rem;
+	}
+
+	.services_cards .responsive_text {
+		width: 28.9rem;
+		margin: 0 auto;
+	}
+
+	.project_section {
+		padding-top: 10rem;
+	}
+
+	.project_section .title_box {
+		padding-top: 1rem;
+	}
+
+	.project_wrapper {
+		padding: 3.6rem 0 11.7rem;
+	}
+
+	.project_logo {
+        min-height: 20rem;
+    }
+
+	.project_cards {
+		min-height: auto;
+		padding: 3.5rem 1.2rem;
+	}
+
+	.project_cards.px_sm_10 {
+		padding: 3.5rem 0.5rem;
+	}
+
+    .project_cards .league_logo {
+        width: 32rem;
+    }
+
+    .project_cards .rival_logo {
+        width: 30rem;
+    }
+
+	.project_cards .genvid_logo {
+		width: 30rem;
+	}
+
+	.project_cards .electronic_logo {
+		width: 30rem;
+	}
+
+	.project_cards .syn_logo {
+		width: 30rem;
+	}
+
+	.about_wrapper {
+		margin-top: 3.6rem;
+		padding: 3.3rem 4rem 5rem;
+	}
+
+	.profile_box {
+		display: flex;
+		flex-direction: column;
+		gap: 6.6rem;
+	}
+
+	.skills_option p {
+       font-size: 1.6rem;
+    }
+
+	.ready_section {
+		padding: 11.4rem 0 10rem;
+	}
+
+	.ready_content_box h2 {
+        font-size: 4rem;
+    }
+
+	.ready_content_box .footer_get_button {
+		padding-top: 4.2rem;
+	}
+
+    .full_bio_box .paragraph {
+		display: flex;
+		flex-direction: column;
+		gap: 3rem;
+	}
+
+	.footer_section {
+		padding: 0 3.5rem 3.5rem;
+	}
+
+	.footer_section .container {
+        padding-left: 0rem;
+        padding-right: 0rem;
+    }
+
+}
+
+
+/*----- xs devices (landscape phones, 575px and down) -----*/
+
+@media (max-width: 575px) {
+
+	html{
+		font-size: 2.325vw;
+	}
+}
+
+
