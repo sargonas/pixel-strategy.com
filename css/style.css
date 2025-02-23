@@ -1,0 +1,564 @@
+/* ---------------- Google fonts ------------------ */
+
+/* VT323 */
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
+/* Roboto Mono */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+
+/* ---------------- Basic css ------------------ */
+
+html{
+	font-size: 0.780vw; 
+	/* 1rem = 10px */
+}
+
+:root {
+	scroll-behavior: smooth;
+
+	/* font */
+	--primaryFont: "Roboto Mono", serif;
+	--secondaryFont: "VT323", serif;
+
+	/* colors */
+	--gray:#EEEEEE;
+	--white: #FFFFFF;
+	--brown: #99713F;
+	--purple: #C5A3E5;
+
+}
+
+html,
+body,
+div,
+span,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+strong,
+i,
+ol,
+ul,
+li,
+form,
+label,
+footer,
+header,
+menu,
+nav,
+section {
+	margin: 0;
+	padding: 0;
+}
+
+ol,
+ul {
+	list-style: none;
+}
+
+a{
+	text-decoration: none;
+	transition: 200ms;
+	color: inherit;
+}
+
+button:focus,
+a:focus,
+input:focus,
+textarea:focus {
+	outline: none;
+}
+
+/* body */
+body {
+	color: var(--gray);
+	font-family: var(--primaryFont);
+	font-size: 1.6rem;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 1.68;
+	background-image: url(../img/page-background.png);
+	background-repeat: no-repeat;
+	background-position: top center;
+	background-size: cover;
+	background-color: #0D0A1B;
+}
+
+.container{
+	padding-left: 1.5rem;
+	padding-right: 1.5rem;
+}
+
+
+/* Title */
+
+h1, h2, h3, h4, h5, h6{
+	font-family: var(--secondaryFont);
+	color: var(--purple);
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+}
+
+.title_xl{
+	font-size: 10rem;
+	color: var(--white);
+}
+
+.title_lg{
+	font-size: 7rem;
+}
+
+.title_md{
+	font-size: 3.2rem;
+}
+
+.title_xs{
+	font-size: 2.4rem;
+}
+
+/* Hamburger Menu */
+
+.hamburger-menu {
+	cursor: pointer;
+	position: relative;
+	display: none;
+	z-index: 999;
+}
+
+.hamburger-menu span {
+	background: #ffffff;
+	width: 3rem;
+	height: .3rem;
+	display: block;
+	margin: .5rem 0;
+	transition: all 0.3s ease;
+}
+
+.hamburger-menu:hover .line-top {
+	transform: translateY(-100%);
+}
+
+.hamburger-menu:hover .line-bottom {
+	transform: translateY(100%);
+}
+
+.hamburger-menu .line-top.current {
+	transform: translateY(200%) rotate(135deg);
+}
+
+.hamburger-menu .line-center.current {
+	opacity: 0;
+}
+
+.hamburger-menu .line-bottom.current {
+	transform: translateY(-325%) rotate(-135deg);
+}
+
+
+/* Button */
+
+.button{
+	position: relative;
+	display: inline-block;
+	text-align: center;
+	font-weight: 400;
+	font-family: var(--primaryFont);
+	font-size: 3rem;
+	line-height: 1.6;
+	padding: 1rem 2rem;
+	border: .2rem solid #000000;
+	color: #000;
+	user-select: none;
+	overflow: hidden;
+	border-radius: 0.6rem;
+	border: 2px solid #000;
+	background: linear-gradient(266deg, #FFD369 0%, #99713F 100.41%);
+	box-shadow: 0px 0px 9.472px 0px #F7D9A6, 0px 0px 5.412px 0px #F7D9A6, 0px 0px 3.157px 0px #F7D9A6, 0px 0px 1.579px 0px #F7D9A6, 0px 0px 0.451px 0px #F7D9A6, 0px 0px 0.226px 0px #F7D9A6;
+}
+
+.button_text {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 0.8rem;
+}
+
+.button_text span {
+	color: #000;
+}
+
+.button:hover .button_text {
+    opacity: 0;
+}
+
+.button_hover_text {
+	position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    transform: translate(-50%, -50%);
+    padding: 2.2rem 1rem;
+	opacity: 0;
+}
+
+.button_hover_text:hover {
+	opacity: 1;
+}
+
+
+
+/* --------------------- Site Header --------------------- */
+
+.site_header {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	padding: 2rem 3rem;
+	background: linear-gradient(88.25deg, #0D0A1B 41.8%, #35325B 98.52%);
+	box-shadow: 0 .4rem .4rem 0 #22222F;
+	position: relative;
+	z-index: 111;
+}
+
+.site_logo{
+	display: inline-block;
+}
+
+.site_logo img {
+	width: 2.4rem;
+}
+
+.menu {
+	display: flex;
+	align-items: center;
+	justify-content: end;
+	gap: 2rem;
+  }
+  
+  .menu li a {
+	color: var(--white);
+	font-size: 1.6rem;
+	display: inline-block;
+	font-weight: 300;
+	transition: 0.3s ease;
+  }
+  
+  .menu li a:hover {
+	color: rgb(255 211 105);
+  }
+
+
+/* --------------------- Hero Section --------------------- */
+
+.hero_section {
+	background-image: url(../img/Arcade-Background.png);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	padding-bottom: 2.8rem;
+}
+
+.hero_content {
+	background-image: url(../img/Hero-Banner-Gradient.png);
+	background-repeat: no-repeat;
+	background-position: center -35%;
+	background-size: cover;
+	padding: 21rem 0 11.3rem;
+	position: relative;
+}
+
+.hero_content p {
+   font-size: 3rem;
+   color: var(--white);
+}
+
+.button_text .arrow {
+	width: 2rem;
+}
+
+
+
+/*--------- Spacer ---------*/
+.spacer {
+	min-height: 24.2rem;
+}
+
+/* --------------------- Services Section --------------------- */
+
+.title_box {
+	text-align: center;
+}
+
+.piece_border {
+	width: 23.9rem;
+    border: .2rem solid #C5A3E5;
+	box-shadow: 00rem 0 1.22rem 0.2rem #C5A3E5;
+	border-radius: 0.2rem;
+    margin: 0 auto;
+}
+
+.services_wrapper {
+	padding: 7rem 0 26.4rem;
+}
+
+.services_wrapper .row {
+	--bs-gutter-x: 5rem;
+	--bs-gutter-y: 12.5rem;
+}
+
+.services_cards {
+	min-height: 27rem;
+	border: .1rem solid #7B7BA7;
+	border-radius: 1rem;
+	padding: 1.5rem 2.4rem;
+	height: 100%;
+}
+
+.services_cards:hover {
+	background: #1C1827;
+	box-shadow: 0 0 2.77rem 0 #554565;
+}
+
+.services_cards .icon {
+	width: auto;
+	height: 8rem;
+}
+
+.services_cards h4 {
+	font-family: var(--primaryFont);
+	padding: 1rem 0;
+}
+
+
+/* --------------------- Project Cards --------------------- */
+.project_wrapper {
+	padding: 7.5rem 0 26.4rem;
+}
+
+.project_wrapper .row {
+	--bs-gutter-x: 2.3rem;
+	--bs-gutter-y: 3.7rem;
+}
+
+.project_cards {
+	min-height: 48rem;
+	height: 100%;
+	padding: 3.5rem 1.5rem;
+	border: .1rem solid #7B7BA7;
+	border-radius: .7rem;
+    box-shadow: 0 .4rem .4rem  #000000B2;
+}
+
+.project_cards:hover {
+	background: #1C1827;
+	box-shadow: 0 0 2.77rem 0 #554565;
+}
+
+.project_logo {
+	min-height: 25.3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.project_cards h4 {
+   font-family: var(--primaryFont);
+   font-weight: 500;
+   color: var(--gray);
+}
+
+.project_cards .league_logo {
+	width: 48.9rem;
+}
+
+.project_cards .rival_logo {
+	width: 33rem;
+}
+
+.project_cards .genvid_logo {
+	width: 33rem;
+}
+
+.project_cards .honored_logo {
+	width: 30rem;
+}
+
+.project_cards .electronic_logo {
+	width: 33rem;
+}
+.project_cards .syn_logo {
+	width: 35rem;
+}
+
+.project_cards p {
+	color: var(--white);
+}
+
+
+/* ---------------------  About Section --------------------- */
+
+
+.about_wrapper {
+	padding: 4rem  4.5rem 6rem;
+	border-radius: .7rem;
+	border: .1rem solid #7B7BA7;
+	margin-top: 12rem;
+	background: linear-gradient(180deg, rgba(33, 50, 85, 0) -13.53%, rgba(38, 41, 83, 0.5) 44.36%, #2A2151 100%);
+}
+
+/* Profile Box */
+.profile_box {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 6.6rem;
+}
+
+.profile_image img {
+	width: 37.4rem;
+	border-radius: 4rem;
+	border: .1rem solid #FFD369;
+}
+
+.profile_info p {
+	line-height: 2.5;
+}
+
+/* Skill Box */
+.skills_box {
+	padding-top: 6.5rem;
+}
+
+.skills_box .row {
+	--bs-gutter-x: 9.5rem;
+	--bs-gutter-y: 1.8rem;
+}
+
+.primary_skills {
+    max-width: 46.5rem;
+}
+
+.primary_skills h3 {
+	color: var(--white);
+	padding-bottom: 1.8rem;
+}
+
+.skills_option {
+    display: flex;
+    flex-direction: column;
+    gap: 1.8rem;
+}
+
+.option {
+    display: flex;
+    align-items: center;
+    gap: 1.7rem;
+}
+
+.skills_option p {
+   width: 22.4rem;
+   padding: 1.5rem 1rem;
+   text-align: center;
+   font-size: 1.6rem;
+   color: var(--white);
+   border-radius: 1rem;
+   background: linear-gradient(90deg, #1D284E 0%, rgba(74, 98, 188, 0.62) 50.15%, #1D284E 100%);
+}
+
+.body_copy {
+	padding: 6.5rem 0;
+	color: var(--white);
+	line-height: 2.5;
+}
+
+
+
+/* Full Bio Box */
+.full_bio_box {
+	padding: 1.4rem 1.6rem;
+	border-radius: .6rem;
+	border: .1rem solid #7B7BA7;
+}
+
+.full_bio_box h3 {
+	color: var(--white);
+	padding-bottom: 1.6rem;
+}
+
+.full_bio_box p {
+	line-height: 2.5;
+}
+
+
+
+
+/* --------------------- Ready Studio Section --------------------- */
+.ready_section {
+	padding: 14rem 0 13.5rem;
+}
+
+.ready_content_box h2 {
+	font-size: 6rem;
+	font-weight: 700;
+	font-family: var(--primaryFont);
+	color: var(--white);
+}
+
+.ready_content_box .footer_get_button {
+	padding-top: 4.8rem;
+}
+
+
+/* --------------------- Footer Section--------------------- */
+
+.footer_section {
+	padding: 0 3.3rem 4.5rem;
+}
+
+.footer_contant {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.footer_logo {
+	display: inline-block;
+}
+
+.footer_logo img {
+	width: 3.6rem;
+}
+
+
+.social_media {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 1.7rem;
+}
+
+.social_media .icon {
+	transition: all 300ms ease;
+}
+
+.social_media .icon1 img {
+	width: 3.2rem;
+}
+
+.social_media .icon2 img {
+	width: 3.6rem;
+}
+
+.social_media .icon1 img:hover {
+	filter: brightness(0) saturate(100%) invert(99%) sepia(46%) saturate(2270%) hue-rotate(318deg) brightness(101%) contrast(100%);
+}
+
+.social_media .icon2 img:hover {
+	filter: brightness(0) saturate(100%) invert(99%) sepia(46%) saturate(2270%) hue-rotate(318deg) brightness(101%) contrast(100%);
+}
