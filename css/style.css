@@ -564,27 +564,32 @@ h1, h2, h3, h4, h5, h6{
 }
 /* ------- slider customizations ----- */
 .slider {
-    /*background: #FFD369;*/
     height: 75pt;
+    padding: 0;
     margin: 0 auto;
+    width: 100%;
     overflow: hidden;
     position: relative;
     cursor: default;
+    align-items: center;
+	justify-content: center;
     user-select: none;
     touch-action: none;
+    display: inline-block;
+	line-height: 1.6;
+	border: .2rem solid #000000;
+	color: #000;
+	border-radius: 0.6rem;
+	border: 2px solid #000;
+	background: linear-gradient(266deg, #FFD369 0%, #99713F 100.41%);
+	box-shadow: 0px 0px 9.472px 0px #F7D9A6, 0px 0px 5.412px 0px #F7D9A6, 0px 0px 3.157px 0px #F7D9A6, 0px 0px 1.579px 0px #F7D9A6, 0px 0px 0.451px 0px #F7D9A6, 0px 0px 0.226px 0px #F7D9A6;
 }
-
 .slider:before {
     left: 0;
     top: 0;
 }
 .slider:after,
 .slider:before {
-    /* background: linear-gradient(
-        to right,
-        #FFD369 0%,
-        hsla(0, 0%, 100%, 0) 100%
-    ); */
     content: "";
     height: 75pt;
     position: absolute;
@@ -598,12 +603,6 @@ h1, h2, h3, h4, h5, h6{
 }
 .slider:after,
 .slider:before {
-    /* background: linear-gradient(
-        to right,
-        #FFD369 0%,
-        hsla(0, 0%, 100%, 0) 100%
-
-    ); */
     content: "";
     height: 75pt;
     position: absolute;
@@ -614,12 +613,12 @@ h1, h2, h3, h4, h5, h6{
 .slider .slide-track-1 {
     animation: scroll-l 30s linear infinite;
     display: flex;
-    width: 100%;
+    width: 4000px;
 }
 .slider .slide-track-2 {
     animation: scroll-r 30s linear infinite;
     display: flex;
-    width: 100%;
+    width: 4000px;
 }
 
 .slider .slide {
@@ -644,7 +643,7 @@ h1, h2, h3, h4, h5, h6{
         transform: translateX(0);
     }
     100% {
-        transform: translateX(calc(-250px * 4));
+        transform: translateX(calc(-250px * 6));
     }
 }
 @keyframes scroll-r {
@@ -652,6 +651,6 @@ h1, h2, h3, h4, h5, h6{
         transform: translateX(0);
     }
     0% {
-        transform: translateX(calc(-250px * 4));
+        transform: translateX(calc(-250px * 6));
     }
 }
