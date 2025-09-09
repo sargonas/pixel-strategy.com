@@ -414,20 +414,24 @@ h1, h2, h3, h4, h5, h6{
 
 /* Profile Box */
 .profile_box {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	gap: 6.6rem;
+	position: relative;
+}
+
+.profile_image {
+	float: left;
+	margin-right: 2rem;
+	margin-bottom: 1rem;
 }
 
 .profile_image img {
-	width: 37.4rem;
+	width: 18.7rem;
 	border-radius: 4rem;
 	border: .1rem solid #FFD369;
 }
 
 .profile_info p {
 	line-height: 2.5;
+	text-align: justify;
 }
 
 /* Skill Box */
