@@ -232,7 +232,10 @@ h1, h2, h3, h4, h5, h6{
 }
 
 .site_logo img {
-	width: 2.4rem;
+	height: 20px;
+    max-height: 20px;
+    width: auto;
+	/*width: 2.4rem;*/
 }
 
 .menu {
