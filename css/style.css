@@ -232,7 +232,10 @@ h1, h2, h3, h4, h5, h6{
 }
 
 .site_logo img {
-	width: 2.4rem;
+	height: 20px;
+    max-height: 20px;
+    width: auto;
+	/*width: 2.4rem;*/
 }
 
 .menu {
@@ -286,7 +289,7 @@ h1, h2, h3, h4, h5, h6{
 
 /*--------- Spacer ---------*/
 .spacer {
-	min-height: 24.2rem;
+	min-height: 6.05rem;
 }
 
 /* --------------------- Services Section --------------------- */
@@ -303,8 +306,26 @@ h1, h2, h3, h4, h5, h6{
     margin: 0 auto;
 }
 
+.bio-vertical-separator {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    bottom: 0;
+    width: 0;
+    border-left: .1rem solid #7B7BA7;
+    transform: translateX(-50%);
+}
+
+.about_wrapper .row.position-relative .col-lg-6:first-child {
+    padding-right: 3rem;
+}
+
+.about_wrapper .row.position-relative .col-lg-6:last-child {
+    padding-left: 3rem;
+}
+
 .services_wrapper {
-	padding: 7rem 0 26.4rem;
+	padding: 7rem 0 6.6rem;
 }
 
 .services_wrapper .row {
@@ -338,7 +359,7 @@ h1, h2, h3, h4, h5, h6{
 
 /* --------------------- Project Cards --------------------- */
 .project_wrapper {
-	padding: 7.5rem 0 26.4rem;
+	padding: 7.5rem 0 6.6rem;
 }
 
 .project_wrapper .row {
@@ -408,26 +429,30 @@ h1, h2, h3, h4, h5, h6{
 	padding: 4rem  4.5rem 6rem;
 	border-radius: .7rem;
 	border: .1rem solid #7B7BA7;
-	margin-top: 12rem;
+	margin-top: 3rem;
 	background: linear-gradient(180deg, rgba(33, 50, 85, 0) -13.53%, rgba(38, 41, 83, 0.5) 44.36%, #2A2151 100%);
 }
 
 /* Profile Box */
 .profile_box {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	gap: 6.6rem;
+	position: relative;
+}
+
+.profile_image {
+	float: left;
+	margin-right: 2rem;
+	margin-bottom: 1rem;
 }
 
 .profile_image img {
-	width: 37.4rem;
+	width: 18.7rem;
 	border-radius: 4rem;
 	border: .1rem solid #FFD369;
 }
 
 .profile_info p {
 	line-height: 2.5;
+	text-align: justify;
 }
 
 /* Skill Box */
