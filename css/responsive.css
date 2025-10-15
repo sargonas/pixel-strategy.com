@@ -95,6 +95,10 @@
         object-fit: cover;
     }
 
+	.skills_box {
+		margin-bottom: 6rem;
+	}
+
 	.skills_box .row {
 		--bs-gutter-x: 5rem;
 		--bs-gutter-y: 6.6rem;
@@ -294,6 +298,10 @@
 		display: flex;
 		flex-direction: column;
 		gap: 6.6rem;
+	}
+
+	.skills_box {
+		margin-bottom: 6rem;
 	}
 
 	.skills_option p {

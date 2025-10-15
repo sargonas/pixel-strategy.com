@@ -455,6 +455,21 @@ h1, h2, h3, h4, h5, h6{
 	text-align: justify;
 }
 
+.profile_info a {
+	background: linear-gradient(266deg, #FFD369 0%, #99713F 100.41%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	background-clip: text;
+	font-weight: 500;
+}
+
+.profile_info a:hover {
+	background: linear-gradient(266deg, #99713F 0%, #FFD369 100.41%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	background-clip: text;
+}
+
 /* Skill Box */
 .skills_box {
 	padding-top: 6.5rem;
