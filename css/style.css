@@ -470,6 +470,17 @@ h1, h2, h3, h4, h5, h6{
 	background-clip: text;
 }
 
+.bio-name {
+	background: linear-gradient(266deg, #FFD369 0%, #99713F 100.41%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	background-clip: text;
+	font-weight: 600;
+	font-size: 1.8rem;
+	margin-bottom: 1.5rem;
+	display: block;
+}
+
 /* Skill Box */
 .skills_box {
 	padding-top: 6.5rem;
